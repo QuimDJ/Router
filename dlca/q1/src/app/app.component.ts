@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'q1';
+  title = 'ESBRINA CHAIN - Collaborative Knowledge System';
 }
