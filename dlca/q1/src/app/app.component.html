@@ -1,8 +1,15 @@
 <html>
   <body>
-    <h2 class="globalText globalTitle">{{title}}</h2>
+    <h2 class="globalText globalTitle">{{title}}</h2> 
 
-    <h3 class="globalText">Sharing knowledge with everyone into a blockchain system.</h3>
+    <select type="number" class="accent" 
+      [(ngModel)]="levelNum" 
+      (ngModelChange)="toNumber()">
+      <option *ngFor="let level of levels" [ngValue]='level.num'>{{ level.name }}</option>
+    </select>
+    
+    
+    <h3 class="globalText">{{subtitle}}</h3>
     <app-home></app-home>
   </body>
 </html>
